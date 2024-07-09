@@ -10,19 +10,27 @@ All data used for the model is the latest results combined with the folder `init
 
 Each week submissions are updated in the answers.txt file
 
+## To run the latest code with latest data:
+
+Open the latest code file .ipnyb and update `resultsfile` and `file` variables:
+
+- Check resultsfile is pointing to latest data
+- Set file to the respective function to run, values are 1 to 8
+
 ## Usage
 
-The folder structrue was designed to be able to run predictions from previous weeks just by referencing the previous results file and the previous ipynb file with matching consecutive number. In the same way a previous file can reference a higher number to compare results using the previous and new code, some examples:
+The folder structrue was designed to give the flexibility to run predictions from code in current and previous weeks against results from previous and new data. Like a mix-and-match approach.
 
-- functionw8.ipynb and functionw9.ipynb can both reference results09.csv to check the results obtained by old and new algorithms with latest data
-- functionw9.ipynb can point to results08.csv to check how the new algorithm compares with results obtained from last week
+Each week a new results file is added with a consecutive number, a matching .ipnyb file is generated and the parameters are updated to point to the new data file. In the same approach any code file can point to different old or new data to evaluate and compare results.
 
-To provide new results:
+Some usage examples:
+
+- functionw8.ipynb (old code) and functionw9.ipynb (new code) can both reference results09.csv (new data) to check how both code files compare with the new data file.
+
+- functionw9.ipynb (new code) can point to results08.csv (old data) to check how the new algorithm compares with results generated from last week
+
+**In order to add new results every week:**
 
 1. Copy results to data folder with a new version number, e.g. results09.csv
 2. Copy the ipnyb file and assign a new name with matching number, e.g. function_w9.ipnyb
-3. Open function_w9.ipnyb and set:
-   - resultsfile = "results09.csv"
-   - file = 1
-
-Run the code and it will generate the results for function 1, copy the results and update file =2 to calculate results for function 2, and so on.
+3. Update variables as described above
