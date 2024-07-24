@@ -83,6 +83,15 @@ WEEK 9
 0.029642-0.251736-0.190020-0.251273-0.271820-0.630126
 0.071915-0.084028-0.065725-0.074123-0.647772-0.463092-0.172738-0.885714
 
+WEEK 10
+0.877228-0.876638   (exploitative / expSineSquared kernel)
+0.681479-0.997980   (exploitative / RationalQuadratic kernel)
+0.396957-0.465740-0.427848 (exploitative / Matern kernel)
+0.387169-0.394453-0.379160-0.425423 (exploitative / RBF kernel)
+0.999999-0.999999-0.999999-0.999999 (exploitative / ExpSineSquared kernel)
+0.376786-0.256616-0.618076-0.796831-0.093563  (exploitative / Matern kernel)
+0.035570-0.201389-0.228024-0.301528-0.326184-0.684137 (exploitative / ExpSineSquared kernel)
+0.086298-0.100834-0.078870-0.088948-0.666280-0.449861-0.207286-0.708571  (exploitative / ExpSineSquared kernel)
 
 
 
