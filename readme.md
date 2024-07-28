@@ -1,5 +1,17 @@
 # Capstone Competition
 
+## Quick start
+
+Visit the github repo at: https://github.com/vhar19/ImperialCollegeCapstoneCompetition for the latest version of this code
+
+1. Open function_w10.ipynb
+2. Ensure variables are set with values `file=1` and `resultsFile = "data/results10.csv"` at the beginning of the script
+3. Run the notebook
+
+## Overview
+
+Folder structure: This project was integrated at a later stage to git, therefore the intial version control was done one file per week and the versions with changes in this project are: function_w7, function_w8, function_w9 and finally function_w10
+
 ## Inputs
 
 Each week results are copied to a new CSV file in the `data` folder with the week number in the name, e.g. reaults06.csv are the results of week 6
@@ -8,7 +20,7 @@ All data used for the model is the latest results combined with the folder `init
 
 ## Outputs
 
-Each week submissions are updated in the answers.txt file
+Each week submissions were updated in the `answers.txt` file
 
 ## To run the latest code with latest data:
 
@@ -19,9 +31,7 @@ Open the latest code file .ipnyb and update `resultsfile` and `file` variables:
 
 ## Usage
 
-The folder structrue was designed to give the flexibility to run predictions from code in current and previous weeks against results from previous and new data. Like a mix-and-match approach.
-
-Each week a new results file is added with a consecutive number, a matching .ipnyb file is generated and the parameters are updated to point to the new data file. In the same approach any code file can point to different old or new data to evaluate and compare results.
+In addition to late integration with github the files were designed to work as cross-reference in mind, meaning a data file from week 5 can run against a code file from week 6, etc. Usually code of week7 runs against data of week7, and so on.
 
 Some usage examples:
 
